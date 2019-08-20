@@ -95,8 +95,8 @@ function myFunction() {
                     Developed using ASP.NET MVC5, HTML, JQuery and Bootstrap.
                     Web application and database has been deployed on Azure.
                     <div class="btncontainer">
-                    <div class="btngreen ecommerceapp">View App</div>
-                    <div class="btnred ecommercecode">View Code</div>
+                    <div class="btngreen ecommercev2app">View App</div>
+                    <div class="btnred ecommercev2code">View Code</div>
                     </div>
                 </div>  
             </div>
@@ -135,6 +135,17 @@ function myFunction() {
     
     
                 <script>
+                    $(".ecommercev2app").click(function () { 
+                       window.open(
+                      'http://ecommerce-v2.azurewebsites.net/','_blank'); 
+                     return false;
+                        });
+    
+                    $(".ecommercev2code").click(function () {
+                        window.open('https://github.com/DavidHade/shopdemo','_blank');
+                     return false;
+                        });
+
                     $(".ecommerceapp").click(function () { 
                        window.open(
                       'https://ecommerce-application.azurewebsites.net/','_blank'); 

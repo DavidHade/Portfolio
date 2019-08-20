@@ -367,7 +367,7 @@ h1 {
 	margin-top: 15%;
 	margin-bottom: 5%;
 	display: grid;
-	grid-template-columns: 15% 35% 35% 15%;
+	grid-template-columns: 15% 23.3% 23.3% 23.3% 15%;
 	grid-template-rows: 300px auto;
 	/**/
 	position: absolute;
@@ -424,9 +424,9 @@ h1 {
 }
 
 .psample1 {
-	grid-column-start: 2;
+	grid-column-start: 3;
 	text-align: center;
-	background-image: url(~images/ecommerce.PNG);
+	background-image: url(../images/ecommerce.PNG);
 	background-size: cover;
 	/**/
 	background-color: #ffffff;
@@ -473,9 +473,9 @@ h1 {
 
 .psample2 {
 	background-color: #ffffff;
-	grid-column-start: 3;
+	grid-column-start: 4;
 	text-align: center;
-	background-image: url(~images/android.jpg);
+	background-image: url(../images/android.jpg);
 	background-size: cover;
 	/**/
 	border: 0.4px solid #777;
@@ -521,9 +521,9 @@ h1 {
 
 .psample3 {
 	background-color: #ffffff;
-	grid-column-start: 3;
+	grid-column-start: 2;
 	text-align: center;
-	background-image: url(~images/ecommercev2.png);
+	background-image: url(../images/ecommercev2.png);
 	background-size: cover;
 	/**/
 	border: 0.4px solid #777;

@@ -387,8 +387,8 @@ h1 {
   margin-bottom: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 35% 35% 15%;
-      grid-template-columns: 15% 35% 35% 15%;
+  -ms-grid-columns: 15% 23.3% 23.3% 23.3% 15%;
+      grid-template-columns: 15% 23.3% 23.3% 23.3% 15%;
   -ms-grid-rows: 300px auto;
       grid-template-rows: 300px auto;
   /**/
@@ -448,10 +448,10 @@ h1 {
 }
 
 .psample1 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   text-align: center;
-  background-image: url(~images/ecommerce.PNG);
+  background-image: url(../images/ecommerce.PNG);
   background-size: cover;
   /**/
   background-color: #ffffff;
@@ -498,10 +498,10 @@ h1 {
 
 .psample2 {
   background-color: #ffffff;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
   text-align: center;
-  background-image: url(~images/android.jpg);
+  background-image: url(../images/android.jpg);
   background-size: cover;
   /**/
   border: 0.4px solid #777;
@@ -547,10 +547,10 @@ h1 {
 
 .psample3 {
   background-color: #ffffff;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   text-align: center;
-  background-image: url(~images/ecommercev2.png);
+  background-image: url(../images/ecommercev2.png);
   background-size: cover;
   /**/
   border: 0.4px solid #777;
