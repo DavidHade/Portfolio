@@ -156,6 +156,10 @@ a:active {
 
 .item1 {
 	z-index: 1;
+
+	
+	background-position: center;
+	background-size: cover;
 	margin-top: 88px;
 	grid-row-start: 2;
 	grid-column-start: 1;
@@ -163,6 +167,23 @@ a:active {
 	font-size: 30px;
 	text-align: center;
 	border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.item1 > .background-image {
+	width:100%;
+	height:50vh;
+	z-index:-1;
+	position: relative;
+	display:block;
+	margin:0px;
+	margin-top:-50px;
+	margin-bottom: -200px;
+	margin-left:-30px;
+	justify-self: center;
+	justify-items: center;
+	box-align:center;
+	box-align:central;
+	filter:blur(1.5px);
 }
 
 .item2 {
@@ -870,3 +891,8 @@ h1 {
 		height: 500px;
 	}
 }
+
+.davidvaikasas, .davidvaikasasdescription, .location:not(i){
+	color:white;
+}
+
