@@ -36,7 +36,7 @@
 
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/all.css" rel="stylesheet" />
-    <script src="JS/jquery.min.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
   </head>
 
   <body>
@@ -73,25 +73,38 @@
             <i class="fa fa-bars"></i>
           </a>
         </div>
-
-        <!-- End smartphone / tablet look -->
       </div>
+      <!-- End smartphone / tablet look -->
 
       <div class="item1">
-        <img
-          class="profilepic entity-image entity-image--profile entity-image--circle-8 topcard__profile-image lazy-loaded"
-          alt="David Vaikasas"
-          src="images/profile.jpg"
-        />
+        <div id="#backLines" style="z-index: 1000">
+          <img
+            class="profilepic entity-image entity-image--profile entity-image--circle-8 topcard__profile-image lazy-loaded"
+            alt="David Vaikasas"
+            src="images/profile.jpg"
+          />
 
-        <div class="davidvaikasas">David Vaikasas</div>
-        <div class="davidvaikasasdescription">
-          Ba (Hons) in Business Information Systems
-        </div>
-        <div class="location">
-          <i class="fas fa-map-pin"></i> Dublin, Ireland
+          <div class="davidvaikasas">David Vaikasas</div>
+          <div class="davidvaikasasdescription">
+            Ba (Hons) in Business Information Systems
+          </div>
+          <div class="location">
+            <i class="fas fa-map-pin"></i> Dublin, Ireland
+          </div>
         </div>
       </div>
+
+      <!-- <script src="JS/three.r92.min.js"></script>
+      <script src="JS/vanta.net.min.js"></script>
+      <script>
+        VANTA.NET({
+          el: ".item1",
+          backgroundColor: 0xe5e8e8,
+          maxDistance: 35.0,
+          points: 11.0,
+          spacing: 20.0
+        });
+      </script> -->
 
       <div class="item2"></div>
 
