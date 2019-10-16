@@ -38,7 +38,6 @@
     <link href="css/all.css" rel="stylesheet" />
     <script src="JS/jquery-3.3.1.min.js"></script>
   </head>
-
   <body>
     <div class="top">
       <div class="left">
@@ -55,6 +54,13 @@
             <i class="fas fa-user-tie"></i>
             <a href="resume.html">Resume</a>
           </div>
+
+          <!--
+                  <div class="menuitem comments">
+                      <i class="fab fa-facebook-f"></i>
+                      <a href="comments.aspx">Comments</a>
+                  </div>
+                  -->
         </div>
       </div>
     </div>
@@ -63,7 +69,7 @@
     <div class="mobile-container">
       <!-- Top Navigation Menu -->
       <div class="topnav">
-        <a href="index.html">David Vaikasas</a>
+        <a href="default.html">David Vaikasas</a>
         <div id="myLinks">
           <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
           <a href="resume.html"><i class="fas fa-user-tie"></i> Resume</a>
@@ -72,8 +78,9 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+
+      <!-- End smartphone / tablet look -->
     </div>
-    <!-- End smartphone / tablet look -->
 
     <script>
       function myFunction() {
@@ -139,7 +146,6 @@
         window.open("https://github.com/DavidHade/shopdemo", "_blank");
         return false;
       });
-
       $(".ecommerceapp").click(function() {
         window.open(
           "https://ecommerce-application.azurewebsites.net/",
@@ -153,18 +159,18 @@
         return false;
       });
 
-      //   $(".fakenewsapp").click(function() {
-      //     window.open(
-      //       "https://play.google.com/store/apps/details?id=davidhade.myapplication",
-      //       "_blank"
-      //     );
-      //     return false;
-      //   });
+      $(".fakenewsapp").click(function() {
+        window.open(
+          "https://play.google.com/store/apps/details?id=davidhade.myapplication",
+          "_blank"
+        );
+        return false;
+      });
 
-      //   $(".fakenewscode").click(function() {
-      //     window.open("https://github.com/DavidHade/Fake_News", "_blank");
-      //     return false;
-      //   });
+      $(".fakenewscode").click(function() {
+        window.open("https://github.com/DavidHade/Fake_News", "_blank");
+        return false;
+      });
     </script>
 
     <style>
