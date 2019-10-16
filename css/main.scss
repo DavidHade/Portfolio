@@ -39,6 +39,12 @@ body {
   height: 100%;
 }
 
+.main-top-project-fix {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto auto auto 30px;
+}
+
 .top {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -393,7 +399,7 @@ h1 {
 
 .projectgrid {
   /**/
-  padding-top: 90px;
+
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
   grid-template-rows: 400px auto;

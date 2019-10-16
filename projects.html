@@ -39,32 +39,34 @@
     <script src="JS/jquery-3.3.1.min.js"></script>
   </head>
   <body>
-    <div class="top">
-      <div class="left">
-        <a href="index.html">David Vaikasas</a>
-      </div>
-      <div class="right">
-        <div class="menu">
-          <div class="menuitem projects">
-            <i class="fas fa-code"></i>
-            <a href="projects.html">Projects</a>
-          </div>
+    <!-- <div class="main"> -->
+    <div class="main-top-project-fix">
+      <div class="top">
+        <div class="left">
+          <a href="index.html">David Vaikasas</a>
+        </div>
+        <div class="right">
+          <div class="menu">
+            <div class="menuitem projects">
+              <i class="fas fa-code"></i>
+              <a href="projects.html">Projects</a>
+            </div>
 
-          <div class="menuitem resume">
-            <i class="fas fa-user-tie"></i>
-            <a href="resume.html">Resume</a>
-          </div>
+            <div class="menuitem resume">
+              <i class="fas fa-user-tie"></i>
+              <a href="resume.html">Resume</a>
+            </div>
 
-          <!--
+            <!--
                   <div class="menuitem comments">
                       <i class="fab fa-facebook-f"></i>
                       <a href="comments.aspx">Comments</a>
                   </div>
                   -->
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
       <!-- Top Navigation Menu -->
@@ -135,7 +137,7 @@
                     </div>
                 </div>  -->
     </div>
-
+    <!-- </div> -->
     <script>
       $(".ecommercev2app").click(function() {
         window.open("http://ecommerce-v2.azurewebsites.net/", "_blank");
@@ -177,6 +179,135 @@
       .menu .projects,
       .projects a {
         color: #ff4136;
+      }
+    </style>
+
+    <style>
+      .main-top-project-fix {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: auto auto auto 30px;
+      }
+      .top {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: last;
+        height: 50px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.125);
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        color: #111;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+      }
+
+      .top > .left {
+        float: left;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .top > .right {
+        float: right;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .top > .left,
+      .top > .right {
+        height: 100%;
+        padding: 0.5rem 1rem;
+        padding-top: 15px;
+      }
+
+      .mobile-container {
+        display: none;
+      }
+
+      .menuitem {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      .menu a {
+        text-decoration: none;
+      }
+
+      .menu > .menuitem:hover a {
+        text-decoration: none;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+      }
+
+      .menu > .menuitem:hover {
+        text-decoration: none;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+      }
+
+      .top > .left a,
+      .top > .left a:visited {
+        text-decoration: none;
+        color: #111;
+      }
+
+      .top > .left:hover a {
+        color: #ff4136;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+      }
+
+      .top > .left:hover {
+        color: #ff4136;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+      }
+
+      .menu > .menuitem {
+        background-color: #ffffff;
+        color: #111;
+      }
+
+      .menu > .menuitem:hover {
+        color: #ff4136;
+      }
+
+      .menu > .menuitem:hover a {
+        color: #ff4136;
+      }
+
+      .menuitem > a:link,
+      a:visited {
+        text-decoration: none;
+        color: #111;
+      }
+
+      .menuitem > a:hover,
+      a:active {
+        text-decoration: none;
+        color: ghostwhite;
+      }
+
+      .right > .menu .menuitem {
+        padding-bottom: 16px;
       }
     </style>
   </body>
