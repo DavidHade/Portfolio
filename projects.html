@@ -34,13 +34,13 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/projects.css" rel="stylesheet" />
     <link href="css/all.css" rel="stylesheet" />
     <script src="JS/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <!-- <div class="main"> -->
-    <div class="main-top-project-fix">
+    <div class="main">
       <div class="top">
         <div class="left">
           <a href="index.html">David Vaikasas</a>
@@ -56,87 +56,60 @@
               <i class="fas fa-user-tie"></i>
               <a href="resume.html">Resume</a>
             </div>
-
-            <!--
-                  <div class="menuitem comments">
-                      <i class="fab fa-facebook-f"></i>
-                      <a href="comments.aspx">Comments</a>
-                  </div>
-                  -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Simulate a smartphone / tablet -->
-    <div class="mobile-container">
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        <a href="default.html">David Vaikasas</a>
-        <div id="myLinks">
-          <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
-          <a href="resume.html"><i class="fas fa-user-tie"></i> Resume</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-
-      <!-- End smartphone / tablet look -->
-    </div>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
-
-    <div class="projectgrid">
-      <div class="psample3">
-        <div class="pg">e-Commerce V2</div>
-        <div class="hiddenpg">
-          MVC5 version of my ecommerce site.
-          <br />
-          Developed using ASP.NET MVC5, HTML, JQuery and Bootstrap. Web
-          application and database has been deployed on Azure.
-          <div class="btncontainer">
-            <div class="btngreen ecommercev2app">View App</div>
-            <div class="btnred ecommercev2code">View Code</div>
           </div>
         </div>
       </div>
 
-      <div class="psample1">
-        <div class="pg">eCommerce</div>
-        <div class="hiddenpg">
-          My mock CMS eCommerce website with a functioning back-end.
-          <br />
-          Developed using ASP.net, HTML, JQuery and CSS. Deployed on Google
-          Compute Engine (Web App) and Azure (database).
-          <div class="btncontainer">
-            <div class="btngreen ecommerceapp">View App</div>
-            <div class="btnred ecommercecode">View Code</div>
+      <!-- Simulate a smartphone / tablet -->
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="index.html">David Vaikasas</a>
+          <div id="myLinks">
+            <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+            <a href="resume.html"><i class="fas fa-user-tie"></i> Resume</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+        <!-- End smartphone / tablet look -->
+      </div>
+
+      <div class="projectcontainer">
+        <div class="projectgrid">
+          <div class="psample3">
+            <div class="pg">e-Commerce V2</div>
+            <div class="hiddenpg">
+              MVC5 version of my ecommerce site.
+              <br />
+              Developed using ASP.NET MVC5, HTML, JQuery and Bootstrap. Web
+              application and database has been deployed on Azure.
+              <div class="btncontainer">
+                <div class="btngreen ecommercev2app">View App</div>
+                <div class="btnred ecommercev2code">View Code</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="psample1">
+            <div class="pg">eCommerce</div>
+            <div class="hiddenpg">
+              My mock CMS eCommerce website with a functioning back-end.
+              <br />
+              Developed using ASP.net, HTML, JQuery and CSS. Deployed on Google
+              Compute Engine (Web App) and Azure (database).
+              <div class="btncontainer">
+                <div class="btngreen ecommerceapp">View App</div>
+                <div class="btnred ecommercecode">View Code</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- <div class="psample2">
-                    <div class="bgimage2"></div>
-                    <div class="pg">Fake News</div>
-                    <div class="hiddenpg">My satire news feed app deployed on Google Play Store
-                        <br />
-                        Developed using Java & XML.<br />
-                        <div class="btncontainer">
-                        <div class="btngreen fakenewsapp">View App</div>
-                        <div class="btnred fakenewscode">View Code</div>
-                        </div>
-                    </div>
-                </div>  -->
     </div>
+
     <!-- </div> -->
     <script>
       $(".ecommercev2app").click(function() {
@@ -181,134 +154,15 @@
         color: #ff4136;
       }
     </style>
-
-    <style>
-      .main-top-project-fix {
-        display: grid;
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: auto auto auto 30px;
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
-      .top {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: last;
-        height: 50px;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: rgba(0, 0, 0, 0.125);
-        background-color: #ffffff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        font-size: 16px;
-        color: #111;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
-        font-weight: 700;
-      }
-
-      .top > .left {
-        float: left;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 16px;
-      }
-
-      .top > .right {
-        float: right;
-        text-decoration: none;
-        font-size: 12px;
-      }
-
-      .top > .left,
-      .top > .right {
-        height: 100%;
-        padding: 0.5rem 1rem;
-        padding-top: 15px;
-      }
-
-      .mobile-container {
-        display: none;
-      }
-
-      .menuitem {
-        display: inline;
-        margin-right: 15px;
-      }
-
-      .menu a {
-        text-decoration: none;
-      }
-
-      .menu > .menuitem:hover a {
-        text-decoration: none;
-        transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-      }
-
-      .menu > .menuitem:hover {
-        text-decoration: none;
-        transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-      }
-
-      .top > .left a,
-      .top > .left a:visited {
-        text-decoration: none;
-        color: #111;
-      }
-
-      .top > .left:hover a {
-        color: #ff4136;
-        transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-      }
-
-      .top > .left:hover {
-        color: #ff4136;
-        transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-      }
-
-      .menu > .menuitem {
-        background-color: #ffffff;
-        color: #111;
-      }
-
-      .menu > .menuitem:hover {
-        color: #ff4136;
-      }
-
-      .menu > .menuitem:hover a {
-        color: #ff4136;
-      }
-
-      .menuitem > a:link,
-      a:visited {
-        text-decoration: none;
-        color: #111;
-      }
-
-      .menuitem > a:hover,
-      a:active {
-        text-decoration: none;
-        color: ghostwhite;
-      }
-
-      .right > .menu .menuitem {
-        padding-bottom: 16px;
-      }
-    </style>
+    </script>
   </body>
 </html>
