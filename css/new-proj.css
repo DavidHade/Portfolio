@@ -7,7 +7,7 @@
 
 html,
 body {
-  min-height: 1500px;
+  min-height: 1600px;
 }
 
 body {
@@ -239,6 +239,18 @@ a:active {
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .article-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article-container {
+    width: 90vw;
   }
 }
 
