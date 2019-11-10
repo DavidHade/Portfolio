@@ -20,7 +20,7 @@
       gtag("js", new Date());
       gtag("config", "UA-140392419-1");
     </script>
-    <!-------Tracking-------->
+    <!-------Tracking-->
 
     <!--Meta tags-->
     <meta charset="UTF-8" />
@@ -34,11 +34,14 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/projects.css" rel="stylesheet" />
     <link href="css/all.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
     <script src="JS/jquery-3.3.1.min.js"></script>
   </head>
   <body>
+    <!-- <div class="main"> -->
     <div class="main">
       <div class="top">
         <div class="left">
@@ -76,40 +79,79 @@
         <!-- End smartphone / tablet look -->
       </div>
 
-      <!--main div-->
-      <div class="cvcontainer">
-        <object
-          data="https://drive.google.com/file/d/1BShp0nDbt33CXHnmmMJwsZL2QWXIsPN8/preview"
-          width="800"
-          height="700"
-        >
-          <embed
-            src="https://drive.google.com/file/d/1BShp0nDbt33CXHnmmMJwsZL2QWXIsPN8/previeww"
-            width="800"
-            height="700"
-          />
-          <p>
-            This browser does not support PDFs. Please download the PDF to view
-            it:
-            <a
-              href="https://drive.google.com/file/d/1BShp0nDbt33CXHnmmMJwsZL2QWXIsPN8/preview/preview"
-              >View the PDF</a
-            >.
-          </p>
-        </object>
+      <div class="projectcontainer">
+        <div class="projectgrid">
+          <div class="psample3">
+            <div class="pg">e-Commerce V2</div>
+            <div class="hiddenpg">
+              MVC5 version of my ecommerce site.
+              <br />
+              Developed using ASP.NET MVC5, HTML, JQuery and Bootstrap. Web
+              application and database has been deployed on Azure.
+              <div class="btncontainer">
+                <div class="btngreen ecommercev2app">View App</div>
+                <div class="btnred ecommercev2code">View Code</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="psample1">
+            <div class="pg">eCommerce</div>
+            <div class="hiddenpg">
+              My mock CMS eCommerce website with a functioning back-end.
+              <br />
+              Developed using ASP.net, HTML, JQuery and CSS. Deployed on Google
+              Compute Engine (Web App) and Azure (database).
+              <div class="btncontainer">
+                <div class="btngreen ecommerceapp">View App</div>
+                <div class="btnred ecommercecode">View Code</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- </div> -->
+    <script>
+      $(".ecommercev2app").click(function() {
+        window.open("http://ecommerce-v2.azurewebsites.net/", "_blank");
+        return false;
+      });
+      $(".ecommercev2code").click(function() {
+        window.open("https://github.com/DavidHade/shopdemo", "_blank");
+        return false;
+      });
+      $(".ecommerceapp").click(function() {
+        window.open(
+          "https://ecommerce-application.azurewebsites.net/",
+          "_blank"
+        );
+        return false;
+      });
+      $(".ecommercecode").click(function() {
+        window.open("https://github.com/DavidHade/eCommerce", "_blank");
+        return false;
+      });
+      $(".fakenewsapp").click(function() {
+        window.open(
+          "https://play.google.com/store/apps/details?id=davidhade.myapplication",
+          "_blank"
+        );
+        return false;
+      });
+      $(".fakenewscode").click(function() {
+        window.open("https://github.com/DavidHade/Fake_News", "_blank");
+        return false;
+      });
+    </script>
+
     <style>
-      .menu .resume,
-      .resume a {
+      .menu .projects,
+      .projects a {
         color: #ff4136;
       }
-      body {
-        background: rgba(248, 249, 249, 1);
-      }
     </style>
-
     <script>
       function myFunction() {
         var x = document.getElementById("myLinks");
