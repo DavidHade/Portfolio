@@ -213,6 +213,7 @@ a:active {
   padding: 30px;
   height: auto;
   width: 70vw;
+  border-radius: 6px;
 }
 
 .article-container img {
@@ -221,6 +222,7 @@ a:active {
   width: auto;
   height: auto;
   float: left;
+  border-radius: 4px;
 }
 
 .article-container .description {
