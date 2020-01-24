@@ -9,8 +9,32 @@
   color: #ff4136;
 }
 
+.author{
+  font-size:1.3rem;
+  font-weight: 800;
+  color:#3a4145;
+}
+
+.link :hover{
+  color: #ff4136;
+}
+
+.rehashed-link{
+  text-decoration: none;
+}
+
+.rehashed-link :hover{
+  color:#0b4f55;
+  color: #ff4136;
+}
+
 .coolblue {
   color: #1c8a93;
+}
+
+.hb:hover{
+  color:#1c8a93;
+  color: #ff4136;
 }
 
 .backwhite {
@@ -366,7 +390,7 @@ h1 {
 .icons {
   text-align: left;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 1.1rem;
   padding: 2px;
 }
 
@@ -692,17 +716,20 @@ h1 {
     letter-spacing: 0.2em;
     font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
     font-weight: 700;
+
   }
   .topnav {
     overflow: hidden;
     position: relative;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
   }
   .topnav #myLinks {
     display: none;
     text-align: center;
     font-size: 12px;
+    
   }
   .topnav #myLinks a {
     border-top: 1px solid rgba(0, 0, 0, 0.125);
