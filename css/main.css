@@ -5,6 +5,16 @@
   margin: 0;
 }
 
+::selection {
+  color:white;
+  background: #d9534f; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  color:white;
+  background: #d9534f; /* Gecko Browsers */
+}
+
 .red {
   color: #ff4136;
 }
@@ -32,6 +42,17 @@
   color: #1c8a93;
 }
 
+.about{
+  color:#3a4145;
+  color:black;
+
+}
+
+.hb{
+  color:black;
+
+  font-weight:600;
+}
 
 .hb:hover{
   color:#1c8a93;
@@ -45,6 +66,8 @@
 .fullheight {
   height: 100%;
 }
+
+
 
 .slickborder {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -874,3 +897,41 @@ h1 {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+  font-weight:400;
+}
