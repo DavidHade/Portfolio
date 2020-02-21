@@ -47,14 +47,14 @@
     <div class="right">
       <div class="menu">
         <div class="menuitem projects">
-          <i class="fas fa-code"></i>
+          <i class="fab fa-codepen"></i>
           <a href="projects.html">Projects</a>
         </div>
 
-        <div class="menuitem resume">
+        <!-- <div class="menuitem resume">
           <i class="fas fa-user-tie"></i>
           <a href="resume.html">Resume</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -65,11 +65,11 @@
     <div class="topnav">
       <a href="index.html">David Vaikasas</a>
       <div id="myLinks">
-        <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
-        <a href="resume.html"><i class="fas fa-user-tie"></i> Resume</a>
+        <a href="projects.html"><i class="fab fa-codepen"></i> Projects</a>
+        <!-- <a href="resume.html"><i class="fas fa-user-tie"></i> Resume</a> -->
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" class="icon" onclick="menutoggle()">
+        <i class="fa fa-bars" style="font-weight: 900"></i>
       </a>
     </div>
   </div>
@@ -183,12 +183,12 @@
 
 
     <script>
-      function myFunction() {
+      function menutoggle() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
-          x.style.display = "none";
+          $(document.getElementById("myLinks")).hide(200);
         } else {
-          x.style.display = "block";
+          $(document.getElementById("myLinks")).show(200);
         }
       }
     </script>
